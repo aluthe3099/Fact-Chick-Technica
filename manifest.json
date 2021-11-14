@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+	"name": "Fact Chick",
+	"description": "A simple page-scraping extension for Chrome to find related site content",
+	"version": "1.0",
+
+	"background": {
+		"scripts": ["popup.js"],
+		"persistent": true
+	},
+
+	"permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
+	"browser_action": {
+		"default_icon": "images/fact-chick-icon.jpg",
+		"default_popup": "popup.html"
+	}
+}
